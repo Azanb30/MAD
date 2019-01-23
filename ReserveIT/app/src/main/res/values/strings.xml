@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ReserveIt</string>
+    <string name="user_id">User Id</string>
+    <string name="i_password">Password</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+    <string name="i_restaurants">Restaurants</string>
+    <string name="i_login">Login</string>
+    <string name="i_registration">Registration</string>
+    <string name="i_reservation">Reservation</string>
+
+    <!--Fareed Strings-->
+    <string name="R_nameview">TextView</string>
+    <string name="R_resname">TextView</string>
+
+    <!--Azan Strings-->
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="next">Next</string>
+    <string name="whats_s_your_gender">Whats\'s your gender?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="nextt">Next</string>
+    <string name="enter_your_mobile_number_and_reserve">Enter your Mobile Number And Reserve</string>
+    <string name="signup">SignUp</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="textview">TextView</string>
+    <string name="your_signup_details">Your Signup Details</string>
+    <string name="sn">TextView</string>
+    <string name="m">TextView</string>
+    <string name="e">TextView</string>
+    <string name="move_forward">Move Forward</string>
+    <string name="nexttt">Next</string>
+    <string name="textviewwww">TextView</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="your_s_password">Your\'s Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_pass">Confirm Pass</string>
+</resources>
