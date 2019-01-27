@@ -13,7 +13,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="272dp"
-        android:text="@string/i_restaurants"
+        android:text="@string/restaurants"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/restaurantButton"
         app:layout_constraintTop_toBottomOf="@+id/restaurantButton" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:text="@string/i_login"
+        android:text="@string/login"
         app:layout_constraintStart_toStartOf="@+id/loginButton"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
-        android:text="@string/i_registration"
+        android:text="@string/registration"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/signupButton"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
@@ -84,7 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="46dp"
-        android:text="@string/i_reservation"
+        android:text="@string/reservation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/reserveButton"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />

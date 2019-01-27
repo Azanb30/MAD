@@ -14,6 +14,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 // db ma space kya ha commas kya hein and soon is ko 99% NULL he krein gy , version
 public class SQLiteHelper extends SQLiteOpenHelper {
 
+    /*azan work*/
     public static final String databaseName = "reserveitt.db";
     public static final String tableName = "Registration";
     public static final String col1 = "email";
@@ -23,6 +24,18 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String col5 = "mob";
     public static final String col6 = "pass";
 
+    /*irtaza work*/
+    public static final String rest = "restaurants";
+    public static final String rid = "id";
+    public static final String rn = "restaurant_name";
+    public static final String addr = "address";
+    public static final String contact = "contact";
+    public static final String logo1 = "logo";
+    public static final String rp = "restaurant_pic";
+    public static final String ot = "opening_time";
+    public static final String ct = "closing_time";
+    public static final String star = "star";
+    public static final String rev = "review";
     /*public SQLiteHelper( Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
      *//* super(context, name, factory, version);*//*//asay b likh skty hein
     }*/
@@ -34,10 +47,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
-    String SQLString = "create table " + tableName +
-    "(" + col1 + " Text Primary key, " + col2 + " Text, " + col3 + " Text, " + col4 + " Text, " + col5 + " Text, " + col6 + " Text " + ")";
-    db.execSQL(SQLString);
+    public void onCreate(SQLiteDatabase db)
+    {
+        String SQLString = "create table " + tableName + "(" + col1 + " Text Primary key, " + col2 + " Text, " + col3 + " Text, " + col4 + " Text, " + col5 + " Text, " + col6 + " Text " + ")";
+        String SQLString2 = "create table " + rest + "(" + rid + " Text Primary key, " + rn + " Text, " + addr + " Text, " + contact + " Text, " + logo1 + " Text, " + rp + " Text, " + ot + " Text, " + ct + " Text, "+ star + " Text, " + rev + " Text " + ")";
+        db.execSQL(SQLString);
+        db.execSQL(SQLString2);
     }
 
     @Override

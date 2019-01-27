@@ -2,7 +2,7 @@
     <string name="app_name">ReserveIt</string>
     <string name="user_id">User Id</string>
     <string name="i_password">Password</string>
-    <string name="login">Login</string>
+    <!--<string name="login">Login</string>-->
     <string name="todo">TODO</string>
     <string name="i_restaurants">Restaurants</string>
     <string name="i_login">Login</string>
@@ -41,4 +41,8 @@
     <string name="confirm_pass">Confirm Pass</string>
     <string name="g">TextView</string>
     <string name="nextttt">Next</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="reservation">Reservation</string>
 </resources>
