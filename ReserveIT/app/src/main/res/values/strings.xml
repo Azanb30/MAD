@@ -39,4 +39,6 @@
     <string name="your_s_password">Your\'s Password</string>
     <string name="password">Password</string>
     <string name="confirm_pass">Confirm Pass</string>
+    <string name="g">TextView</string>
+    <string name="nextttt">Next</string>
 </resources>

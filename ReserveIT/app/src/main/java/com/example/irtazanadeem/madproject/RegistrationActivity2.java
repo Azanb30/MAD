@@ -1,6 +1,8 @@
 package com.example.irtazanadeem.madproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,8 +30,12 @@ public class RegistrationActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int radioId = radioGroup.getCheckedRadioButtonId();
-
+                SharedPreferences sharedpref = getSharedPreferences("User Info", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpref.edit();
                 radioButton = findViewById(radioId);
+                String str = radioButton.getText().toString();
+                editor.putString("Gender",str);
+                editor.apply();
                 startActivity(i);
 
             }

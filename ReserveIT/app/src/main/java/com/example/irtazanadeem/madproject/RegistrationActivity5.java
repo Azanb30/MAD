@@ -1,6 +1,8 @@
 package com.example.irtazanadeem.madproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +27,10 @@ public class RegistrationActivity5 extends AppCompatActivity {
             if (edit_Text_7.getText().toString().equals(edit_Text_8.getText().toString()))
             {
                 Toast.makeText(this,"Sign Up Successfully",Toast.LENGTH_LONG).show();
+                SharedPreferences sharedpref = getSharedPreferences("User Info", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpref.edit();
+                editor.putString("pass",edit_Text_7.getText().toString());
+                editor.apply();
                 Intent i = new Intent(this,RegistrationActivity4.class);
                 startActivity(i);
             }
