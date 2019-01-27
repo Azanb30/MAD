@@ -25,7 +25,7 @@ public class IndexActivity extends AppCompatActivity {
         restaurant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(IndexActivity.this,Restaurants.class);
+                Intent i = new Intent(IndexActivity.this,MainActivity.class);
                 startActivity(i);
             }
         });

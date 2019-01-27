@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
             if (myDatabase.verify_em_ps(UN,PWD))
             {
                 Toast.makeText(this, "You are now Logged In", Toast.LENGTH_SHORT).show();
-                Intent i = i = new Intent(this,Restaurants.class);
+                Intent i = i = new Intent(this,MainActivity.class);
                 startActivity(i);
             }
             else

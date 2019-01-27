@@ -31,7 +31,7 @@ public class RegistrationActivity4 extends AppCompatActivity {
         textView_4 = findViewById(R.id.textView9);
         textView_5 = findViewById(R.id.textView10);
         button = findViewById(R.id.button4);
-        i = new Intent(this,Restaurants.class);//yahn sy load ho gi irtaza ki login page
+        i = new Intent(this,MainActivity.class);//yahn sy load ho gi irtaza ki login page
         SharedPreferences sharedpref = getSharedPreferences("User Info",Context.MODE_PRIVATE);
         final String name = sharedpref.getString("FirstName","");
         final String sn = sharedpref.getString("SurName","");
