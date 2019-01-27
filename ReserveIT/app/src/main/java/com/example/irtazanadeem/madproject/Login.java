@@ -1,5 +1,6 @@
 package com.example.irtazanadeem.madproject;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ public class Login extends AppCompatActivity {
 
     public EditText username;
     public EditText password;
-
+    SQLiteHelper myDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,8 @@ public class Login extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.editText);
         password = (EditText) findViewById(R.id.editText2);
+        myDatabase = new SQLiteHelper(this);
+
     }
 
     public void onClickLoginButton(View view)
@@ -35,13 +38,17 @@ public class Login extends AppCompatActivity {
         {
             Toast.makeText(this, "Password field is empty", Toast.LENGTH_SHORT).show();
         }
-        else {
-            String id = SP.getString("username","");
-            String pswd = SP.getString("password", "");
-
-            if(UN.equals(id) && PWD.equals(pswd))
+        else
+        {
+            if (myDatabase.verify_em_ps(UN,PWD))
             {
-                //change activity if login successfull
+                Toast.makeText(this, "You are now Logged In", Toast.LENGTH_SHORT).show();
+                Intent i = i = new Intent(this,Restaurants.class);
+                startActivity(i);
+            }
+            else
+            {
+                Toast.makeText(this, "User Not Exists", Toast.LENGTH_SHORT).show();
             }
         }
     }

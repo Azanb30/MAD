@@ -79,17 +79,17 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         else
             return true;
     }
-
-    public Cursor getAllData()
+    public boolean verify_em_ps(String e,String p)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor result = db.rawQuery("select * from "+ tableName,null);
-        // Cursor result = db.rawQuery("select id from "+ tableName +" where col2 = ? and col3 = ? ",new String []{"azan","foit"});
-        return result;
-    }
-    public Integer deleteData(String email)
-    {
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(tableName,"RollNumber = ?",new String[]{email});
+        Cursor result = db.rawQuery("select * from "+ tableName + " where email = ? and pass = ? ", new String[]{e,p});
+        if (result.getCount()==1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
